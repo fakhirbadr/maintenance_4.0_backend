@@ -2,7 +2,6 @@ import express from "express";
 import morgan from "morgan";
 import cors from "cors"; // Ajoutez cette ligne
 import uniteRouter from "./routes/uniteRoutes.js";
-import OpenAI from "openai";
 import dotenv from "dotenv";
 import stocksRouter from "../backend/stocks/routes/stocksRoute.js";
 import calendarRoute from "../backend/calendar/routes/calendarRoute.js";
@@ -27,10 +26,7 @@ app.use((req, res, next) => {
   next();
 });
 
-// Configuration OpenAI
-// const openai = new OpenAI({
-//   apiKey: process.env.OPENAI_API_KEY,
-// });
+
 
 // 2) ROUTES
 app.use("/api/v1/unite", uniteRouter);
