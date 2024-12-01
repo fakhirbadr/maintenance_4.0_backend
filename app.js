@@ -3,7 +3,6 @@ import morgan from "morgan";
 import cors from "cors"; // Ajoutez cette ligne
 import uniteRouter from "./routes/uniteRoutes.js";
 import dotenv from "dotenv";
-import stocksRouter from "../backend/stocks/routes/stocksRoute.js";
 import calendarRoute from "../backend/calendar/routes/calendarRoute.js";
 import alerteRoute from "../backend/rapportAlerte/routes/alerteRoute.js";
 import ticketMaintenanceRoutes from "../backend/ticket_maintenance/routes/ticketMaintenanceRoutes.js";
@@ -25,8 +24,6 @@ app.use((req, res, next) => {
   console.log(`Heure de la requête : ${req.requestTime}`);
   next();
 });
-
-
 
 // 2) ROUTES
 app.use("/api/v1/unite", uniteRouter);
