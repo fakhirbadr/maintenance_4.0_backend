@@ -25,9 +25,7 @@ app.use((req, res, next) => {
 
 // 2) ROUTES
 app.use("/api/v1/unite", uniteRouter);
-app.use("/api/v1/stocks", stocksRouter);
-app.use("/api/v1/calendar", calendarRoute);
-app.use("/api/v1/alert", alerteRoute);
+
 app.use("/api/v1/ticketMaintenance", ticketMaintenanceRoutes);
 app.use("/api/v1/fournitureRoutes", fournitureRoutes);
 app.use("/api/v1/users", userRoutes);
