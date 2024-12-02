@@ -3,7 +3,7 @@ import morgan from "morgan";
 import cors from "cors"; // Ajoutez cette ligne
 import uniteRouter from "./routes/uniteRoutes.js";
 import dotenv from "dotenv";
-import ticketMaintenanceRoutes from "../backend/ticket_maintenance/routes/ticketMaintenanceRoutes.js";
+import ticketMaintenanceRoutes from "./routes/ticketMaintenanceRoutes.js";
 import fournitureRoutes from "../backend/ticket_fourniture/routes/ticketFournitureRoutes.js";
 import userRoutes from "../backend/user/routes/userRoute.js";
 dotenv.config();

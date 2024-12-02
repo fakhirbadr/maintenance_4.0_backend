@@ -5,7 +5,7 @@ import {
   createTicket,
   updateTicket,
   deleteTicket,
-} from "../controllers/ticketMaintenanceController.js";
+} from "../ticket_maintenance/controllers/ticketMaintenanceController.js";
 
 const router = express.Router();
 
