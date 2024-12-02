@@ -14,7 +14,7 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "https://aquamarine-bunny-4922e0.netlify.app", // Votre application déployée
+      "https://scxassetmanagement.netlify.app/", // Votre application déployée
     ],
   })
 );
