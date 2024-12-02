@@ -14,7 +14,7 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "https://scxassetmanagement.netlify.app/", // Votre application déployée
+      "https://scxassetmanagement.netlify.app", // Votre application déployée
     ],
   })
 );
