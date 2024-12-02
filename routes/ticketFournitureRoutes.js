@@ -5,7 +5,7 @@ import {
   createFourniture,
   updateFourniture,
   deleteFourniture,
-} from "../controllers/ticketFournitureController.js";
+} from "../ticket_fourniture/controllers/ticketFournitureController.js";
 
 const router = express.Router();
 
